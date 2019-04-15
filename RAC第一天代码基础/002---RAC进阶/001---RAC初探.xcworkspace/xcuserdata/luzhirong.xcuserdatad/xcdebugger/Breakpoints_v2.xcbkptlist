@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "001---RAC&#x521d;&#x63a2;/ViewController.m"
+            timestampString = "568608848.05153"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "-timeOut"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController timeOut]"
+                  moduleName = "001---RAC&#x521d;&#x63a2;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coder/Desktop/%E9%80%BB%E8%BE%91%E6%95%99%E8%82%B2/RAC%E8%B5%84%E6%96%99/RAC%E7%AC%AC%E4%B8%80%E5%A4%A9%E4%BB%A3%E7%A0%81%E5%9F%BA%E7%A1%80/002---RAC%E8%BF%9B%E9%98%B6/001---RAC%E5%88%9D%E6%8E%A2/ViewController.m"
+                  timestampString = "568608848.149137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__25-[ViewController timeOut]_block_invoke"
+                  moduleName = "001---RAC&#x521d;&#x63a2;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/coder/Desktop/%E9%80%BB%E8%BE%91%E6%95%99%E8%82%B2/RAC%E8%B5%84%E6%96%99/RAC%E7%AC%AC%E4%B8%80%E5%A4%A9%E4%BB%A3%E7%A0%81%E5%9F%BA%E7%A1%80/002---RAC%E8%BF%9B%E9%98%B6/001---RAC%E5%88%9D%E6%8E%A2/ViewController.m"
+                  timestampString = "568608848.154153"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "001---RAC&#x521d;&#x63a2;/ViewController.m"
+            timestampString = "568608848.052232"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "-timeOut"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "001---RAC&#x521d;&#x63a2;/ViewController.m"
+            timestampString = "568608848.052911"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "-timeOut"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
