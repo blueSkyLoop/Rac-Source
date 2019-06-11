@@ -75,7 +75,7 @@
 - (void)sendError:(NSError *)e {
 	@synchronized (self) {
 		void (^errorBlock)(NSError *) = [self.error copy];
-        // 执行了销毁方法
+        // 在回调 block 之前 ，执行了销毁方法
 		[self.disposable dispose];
 
 		if (errorBlock == nil) return;
@@ -86,7 +86,7 @@
 - (void)sendCompleted {
 	@synchronized (self) {
 		void (^completedBlock)(void) = [self.completed copy];
-        // 执行了销毁方法
+        // 在回调 block 之前 ，执行了销毁方法
 		[self.disposable dispose];
 
 		if (completedBlock == nil) return;

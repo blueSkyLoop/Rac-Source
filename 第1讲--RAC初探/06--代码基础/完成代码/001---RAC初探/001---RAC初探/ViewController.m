@@ -40,16 +40,16 @@
 //    [self testNoti];
     
     //替代UI target
-//    [self testUI];
+    [self testUI];
     
     //数据结构
 //    [self testSequence];
     
     //代替timer
     
-    NSLog(@"%@",[NSThread currentThread]);
+//    NSLog(@"%@",[NSThread currentThread]);
 
-    [self testTmer];
+//    [self testTmer];
 
     
 }
@@ -94,12 +94,12 @@
     //Button
     [[self.button rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
 
-        NSLog(@"%@",x);
+        NSLog(@"subscribeNext---%@",x);
     }];
 
     self.button.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
 
-        NSLog(@"%@",input);
+        NSLog(@"rac_command---%@",input);
 
         return [RACSignal empty];
 
@@ -166,12 +166,16 @@
         //subscriber 对象不是一个对象
         //3:发送信号
         [subscriber sendNext:@"Cooci"];
+
+        
+        // 添加这行代码会直接销毁订阅者， error 操作不会执行
+//        [subscriber sendCompleted];
         
         //请求网络 失败 error
         NSError *error = [NSError errorWithDomain:NSURLErrorDomain code:10086 userInfo:@{@"key":@"10086错误"}];
         
         [subscriber sendError:error];
-//        [subscriber sendCompleted];
+
         
         //RACDisposable 销毁
         
@@ -185,14 +189,14 @@
     //2:订阅信号
     [signal subscribeNext:^(id  _Nullable x) {
        
-        NSLog(@"%@",x);
+        NSLog(@"订阅信号---%@",x);
     }];
     
     //订阅错误信号
     
     [signal subscribeError:^(NSError * _Nullable error) {
        
-        NSLog(@"%@",error);
+        NSLog(@"订阅错误信号---%@",error);
     }];
     
     

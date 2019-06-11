@@ -30,7 +30,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self lo_Observe];
+//    [self lo_Observe];
+    
+    [self lo_signal];
 }
 
 
@@ -56,8 +58,16 @@
         self.subsrcribe = subscriber;
         
         NSLog(@"创建了信号");
+        
         // 3 发送信号
         [subscriber sendNext:@"hahah"];
+        
+        
+        
+        
+//        [subscriber sendError:nil];
+        
+        [subscriber sendCompleted];
         
         // 4 销毁信号
         // return self.dis; 销毁回调
@@ -67,6 +77,7 @@
     }];
     
     self.signal = signal;
+    
     
     // 2 订阅信号
     // 订阅者 包含有 subscriber、signal、disposable
@@ -78,7 +89,12 @@
         NSLog(@"subscribeNext:%@",x);
     }];
     //  signal subscriber 销毁 --- RAC
-    // 以下两个方法，要是被调用一次后，
+    /*
+     注意：以下两个方法，要是被调用一次后，订阅者（subscriber）subscribeNext 函数不会再被响应
+             [subscriber sendError:nil];
+             [subscriber sendCompleted];
+        以上两个方法，内部分别都调用了  [self.disposable dispose]; 使得 subscribeNext 失效
+     */
     [signal subscribeError:^(NSError * _Nullable error) {
         NSLog(@"subscribeError");
     }];

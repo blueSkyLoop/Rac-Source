@@ -28,7 +28,10 @@
 #pragma mark Lifecycle
 
 + (RACSignal *)createSignal:(RACDisposable * (^)(id<RACSubscriber> subscriber))didSubscribe {
-    // RACDynamicSignal 继承于 RACSignal
+    /*
+     RACDynamicSignal 继承于 RACSignal
+    */
+    
 	return [RACDynamicSignal createSignal:didSubscribe];
 }
 
@@ -273,7 +276,7 @@
 - (RACDisposable *)subscribeNext:(void (^)(id x))nextBlock {
 	NSCParameterAssert(nextBlock != NULL);
 	
-    // 创建 subscribe 对象 并保存 Next Error、Completed 三个Block
+    // 创建 subscribe 对象 并保存 Next、Error、Completed 三个Block
 	RACSubscriber *o = [RACSubscriber subscriberWithNext:nextBlock error:NULL completed:NULL];
     // 传入 subscribe 并创建 disposable
 	return [self subscribe:o];
