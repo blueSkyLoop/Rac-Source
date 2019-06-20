@@ -56,7 +56,6 @@
     RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         @strongify(self)
         self.subsrcribe = subscriber;
-        
         NSLog(@"创建了信号");
         
         // 3 发送信号
