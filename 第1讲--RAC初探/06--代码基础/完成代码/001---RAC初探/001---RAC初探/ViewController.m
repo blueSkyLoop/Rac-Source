@@ -34,13 +34,13 @@
 //    [self testKVO];
     
      //替代代理
-//    [self testDelegate];
+    [self testDelegate];
     
     //替代通知
 //    [self testNoti];
     
     //替代UI target
-    [self testUI];
+//    [self testUI];
     
     //数据结构
 //    [self testSequence];
